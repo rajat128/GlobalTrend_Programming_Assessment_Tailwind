@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q1</title>
+    <link href="../dest/output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/d/ist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header>
+      <div
+        class="flex justify-between items-center p-4 bg-gray-800 px-10 py-10 rounded-sm max-h-[150px]"
+      >
+        <a href="#" class="text-white font-bold text-2xl">Global Trend </a>
+        <div class="flex items-center">
+          <a
+            href="#"
+            class="ml-4 text-white hover:font-serif hover:font-black font-bold text-xl hover:text-cyan-300"
+            >Menu</a
+          >
+          <a
+            href="#"
+            class="ml-4 hover:text-red-500 hover:font-serif hover:font-black text-white font-bold text-xl"
+            >About</a
+          >
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow p-10 h-screen  flex justify-center bg-gray-200 ">
+      <div class="text-2xl font-normal mb-4 border-4 p-16 bg-slate-100 h-fit rounded-xl shadow-2xl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        facilis ratione provident modi. Placeat, suscipit? Consequuntur,
+        eveniet. Odio et nesciunt neque velit dicta! Ratione aperiam fugiat
+        totam doloremque consequatur officia libero eum labore voluptatibus
+        repudiandae mollitia rerum quaerat cupiditate quis adipisci ipsum
+        repellat, facere ea non repellendus. Ut magni aliquid nisi corporis
+        alias ratione molestiae architecto ullam iure aperiam, ipsam esse, quos
+        vitae assumenda dolore optio sequi! Officiis perferendis vero, quia
+        facilis reiciendis sapiente hic eveniet, cum sunt incidunt ut eius enim?
+        Provident, officia fugit. Facere, explicabo, dolorem atque voluptatibus
+        maiores, vero nemo cupiditate eveniet quaerat ipsum fugit debitis
+        impedit.
+      </div>
+    </main>
+
+    <footer
+      class="bottom-0 h-32 left-0 right-0 fixed w-full bg-red-500 rounded-sm shadow-xl flex items-center justify-center px-10"
+    >
+      <div
+        class="mx-auto hover:border-2 hover:px-10 hover:py-2 hover:font-black hover:rounded-lg text-xl max-w-screen-xl text-white"
+      >
+        Global Trend
+      </div>
+      <div
+        class="mx-auto hover:border-2 hover:px-10 hover:py-2 hover:font-black hover:rounded-lg text-xl max-w-screen-xl text-white"
+      >
+        Contact
+      </div>
+      <div
+        class="mx-auto hover:border-2 hover:px-10 hover:py-2 hover:font-black hover:rounded-lg text-xl max-w-screen-xl text-white"
+      >
+        Footer
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q10</title>
+    <link href="../dest/Q10.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body>
+  
+
+<main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white  antialiased">
+    <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
+        <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+            <header class="mb-4 lg:mb-6 not-format">
+                <address class="flex items-center mb-6 not-italic">
+                    <div class="inline-flex items-center mr-3 text-sm text-black dark:text-black">
+                        <img class="mr-4 w-16 h-16 rounded-full" src="data:image/jpeg;base64,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" alt="Jese Leos">
+                        <div>
+                            <a href="#" rel="author" class="text-xl font-bold text-black dark:text-black">Rajat Parihar</a>
+                            <p class="text-base text-black ">Programmer</p>
+                            <p class="text-base text-black "><time pubdate datetime="2024-07-20" title="July 20th, 2022">July. 20, 2024</time></p>
+                        </div>
+                    </div>
+                </address>
+                <h1 class="mb-4 text-3xl font-extrabold leading-tight text-black lg:mb-6 lg:text-4xl dark:text-black">Best practices for successful Programmer</h1>
+            </header>
+            <p class="lead">If you want to succeed as a developer, you need to immerse yourself in the coding culture. The programming field is so vast, and there is so much information to absorb that you’ll never get on top if you don’t keep involved enough in all the news and updates.
+
+                Here at PandaDoc, we strongly believe that learning is a key value. Even though we’re all experts in our respective fields, we always make time to expand our minds.
+                
+                It was 2007 when Paul Graham, a world-renowned technology expert, decided to dedicate himself to cybersecurity by creating a special blog. Initially, the website appeared to be a platform for regular news related to online security. It also aimed to make users more aware of online security.
+
+
+              <p></p>  Today, the platform gathers millions of views each month and has more than three million subscribers on social networks. Currently, this blog deserves the title of one of the most professional resources, which covers security on the Internet, keeping users informed about the latest developments and technologies in the industry. Among the readers of the blog are both top-class experts and amateurs who are simply interested in the issue.
+
+.</p>
+            <p>There is probably no IT expert who has not dealt with the DEV community, dedicated to many fields of programming and development. The platform is attractive to both newcomers and true professionals of the industry.
+
+                The community is growing very fast, offering users a huge variety of activities, including communication in the forum as well as access to special help sections, tutorials, tips, and the latest industry news. By reaching out to the Dev community, you’re sure to get a professional and in-depth answer to anything that interests you. If you want to learn as much as you can about development, this is the perfect place.</p>
+            <figure class="mt-5"><img   src="https://www.testpreptraining.com/blog/wp-content/uploads/2023/05/testing-bad-testing.jpg" alt="">
+                <figcaption class="mt-2 mb-2  text-gray-700 font-bold">Anonymous</figcaption>
+            </figure>
+         
+            
+  
+            <section class="not-format">
+                <div class="flex justify-between items-center mb-6">
+                    <h2 class="text-lg lg:text-2xl font-bold text-black dark:text-black">Discussion (0)</h2>
+                </div>
+                <form class="mb-6">
+                    <div class="py-2 px-4 mb-4 bg-white rounded-lg rounded-t-lg border border-gray-200 dark:bg-gray-800 ">
+                        <label for="comment" class="sr-only">Your comment</label>
+                        <textarea id="comment" rows="6"
+                            class="px-0 w-full text-sm text-black border-0 focus:ring-0 dark:text-black dark:placeholder-gray-400 dark:bg-gray-800"
+                            placeholder="Write a comment..." required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-black bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
+                        Post comment
+                    </button>
+                </form>
+                <article class="p-6 mb-6 text-base bg-white rounded-lg ">
+                   
+  </main>
+  
+  <aside aria-label="Related articles" class="text-white py-8 lg:py-24 bg-gray-50 dark:bg-gray-800">
+    <div class="px-4 mx-auto max-w-screen-xl">
+        <h2 class="mb-8 text-2xl font-bold  ">Related articles</h2>
+        <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+            <article class="max-w-xs ml-16">
+                <a href="#">
+                    <img class="h-48 w-56 rounded mb-2" src="https://files.tecnoblog.net/wp-content/uploads/2016/01/java_capa.jpg" class="mb-5 rounded-lg" alt="Image 1">
+                </a>
+                <h2 class="mb-2 text-xl font-bold leading-tight  ">
+                    <a href="#">JAVA</a>
+                </h2>
+                <p class="mb-4  ">Over the past year, JAVA is more developed.</p>
+                <a href="#" class="inline-flex items-center font-medium underline underline-offset-4  dark:text-primary-500 hover:no-underline">
+                    Read in 2 minutes
+                </a>
+            </article>
+            <article class="max-w-xs ml-16">
+                <a href="#">
+                    <img class="h-48 w-56 rounded mb-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFstZyRKOsNWK_wCvbnxqeHCB600ZTwclFmw&s" class="mb-5 rounded-lg" alt="Image 2">
+                </a>
+                <h2 class="mb-2 text-xl font-bold leading-tight  ">
+                    <a href="#">PYTHON</a>
+                </h2>
+                <p class="mb-4   ">Over the past year, PYTHON is more developed</p>
+                <a href="#" class="inline-flex items-center font-medium underline underline-offset-4  dark:text-primary-500 hover:no-underline">
+                    Read in 12 minutes
+                </a>
+            </article>
+            <article class="max-w-xs ml-16">
+                <a href="#">
+                    <img class="h-48 w-56 rounded mb-2" src="https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue.png" class="mb-5 rounded-lg" alt="Image 3">
+                </a>
+                <h2 class="mb-2 text-xl font-bold leading-tight  ">
+                    <a href="#">C++</a>
+                </h2>
+                <p class="mb-4   ">Over the past year, C++ is more developed</p>
+                <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 dark:text-primary-500 hover:no-underline">
+                    Read in 8 minutes
+                </a>
+            </article>
+            <article class="max-w-xs ml-16">
+                <a href="#">
+                    <img  class="h-48 w-56 rounded mb-2" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="mb-5 rounded-lg" alt="Image 4">
+                </a>
+                <h2 class="mb-2 text-xl font-bold leading-tight text-white ">
+                    <a href="#">JAVASCRIPT</a>
+                </h2>
+                <p class="mb-4  ">Over the past year, JAVASCRIPT is more developed</p>
+                <a href="#" class="inline-flex items-center font-medium underline underline-offset-4 text-white dark:text-primary-500 hover:no-underline">
+                    Read in 4 minutes
+                </a>
+            </article>
+        </div>
+    </div>
+  </aside>
+  
+ 
+  
+
+</body>
+</html>

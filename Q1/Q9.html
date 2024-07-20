@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9</title>
+    <link href="../dest/Q9.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.js"></script> -->
+</head>
+<body>
+    
+
+<div class="flex justify-center mt-32">
+<button data-modal-target="default-modal" data-modal-toggle="default-modal" id="tbutton"class="block  flex justify-center text-white bg-blue-700 hover:bg-blue-800 p-2 rounded font-serif hover:text-blue-500 hover:font-black hover:border-2 hover:bg-transparent" type="button" onclick="toogle()">
+    Toggle modal
+  </button></div>
+  
+
+ <div class="px-2">
+  <div id="default-modal" tabindex="-1"  class="hidden  bg-slate-100 rounded-lg shadow-xl border-2 p-10 mt-16 overflow-y-auto overflow-x-hidden flex justify-center fixed  z-50 justify-center items-center w-full  md:inset-0 h-[calc(100%-1rem)] h-fit">
+          <div class=" bg-slate-50 rounded-lg shadow bg-gray-700">
+  
+              <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t ">
+                  <h3 class="text-xl font-semibold text-gray-900 text-slate-700">
+                      Terms of Service
+                  </h3>
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center hover:bg-gray-600 hover:text-white" data-modal-hide="default-modal" onclick="toogle()">
+                      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                      </svg>
+                      <span class="sr-only">Close modal</span>
+                  </button>
+              </div>
+        
+              <div class="p-4 md:p-5 space-y-4">
+                  <p class="text-base leading-relaxed text-gray-500 text-gray-400">
+                      Global Trend Programming
+
+              </div>
+        
+              <div class="flex items-center p-4 md:p-5 rounded">
+                  <button data-modal-hide="default-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-lg text-sm px-5 py-2.5 text-center text-white hover:font-black hover:text-green-500 bg-green-600 hover:bg-slate-100 hover:border-none " onclick="toogle()">I accept</button>
+                  <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900  bg-red-500 text-white hover:text-red-500 rounded-lg border border-red-500 hover:bg-slate-100 hover:border-none hover:font-black " onclick="toogle()">Decline</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toogle(){
+        let modal = document.getElementById("default-modal");
+        modal.style.display === 'block' ? modal.style.display = 'none' : modal.style.display = 'block';
+        
+      }
+</script>
+</body>
+</html>

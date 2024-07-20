@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3</title>
+    <link href="../dest/Q3.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/d/ist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+      let isReadMore = false;
+      function read() {
+        let text = document.getElementById("text");
+        let button = document.getElementById("read");
+        if (!isReadMore) {
+          text.innerText =
+            "We counted the number of questions associated with each unique tag; each can have up to five tags, so questions will get counted more than once. Python and JavaScript are solidly positioned in their respective top spots, Reactjs and Java show competing question counts starting towards the end of 2021, and ultimately Reactjs takes the lead with consistently more questions tagged in 2022. HTML and C# switch spots monthly in 2021, though C# moves ahead in 2022 with consistently more questions. In the lower ranks, Pandas sees three years of growth, R increases rank in 2021 and holds, nodejs breaks into the top 10 in 2021 and holds, while both PHP and C++ decline.";
+          button.innerText = "Show Less";
+          isReadMore = true;
+        } else {
+          text.innerText =
+            "We counted the number of questions associated with each unique tag; each can have up to five tags, so questions will get counted more than once. Python and JavaScript are solidly positioned in their respective top spots. HTML and C# switch spots monthly in 2021, though C# moves ahead in 2022 with consistently more questions.";
+          button.innerText = "Read More";
+          isReadMore = false;
+        }
+      }
+    </script>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-slate-200">
+    <card class="border-2 shadow-2xl bg-slate-100 rounded-xl">
+      <div
+        class="relative p-2 flex flex-col mt-6 text-gray-700 bg-slate-100 shadow-md rounded-xl w-96"
+      >
+        <div
+          class="relative shadow-xl h-56 mx-4 mt-6 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 shadow-blue-gray-500"
+        >
+          <img
+            src="https://d3m1rm8xuevz4q.cloudfront.net/wp-content/uploads/2024/01/Popular-Programming-1.webp"
+            alt="card-image"
+          />
+        </div>
+        <div class="p-6">
+          <h5
+            class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900"
+          >
+            Popular Programming Languages
+          </h5>
+          <p
+            id="text"
+            class="block font-sans text-base antialiased font-light leading-relaxed text-inherit"
+          >
+            We counted the number of questions associated with each unique tag;
+            each can have up to five tags, so questions will get counted more
+            than once. Python and JavaScript are solidly positioned in their
+            respective top spots. HTML and C# switch spots monthly in 2021,
+            though C# moves ahead in 2022 with consistently more questions.
+          </p>
+        </div>
+        <div class="p-6 pt-0">
+          <button
+            class="align-middle block select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md hover:shadow-lg hover:bg-transparent hover:text-black hover:font-black hover:text-md focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+            type="button"
+            id="read"
+            onclick="read()"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
+    </card>
+  </body>
+</html>
